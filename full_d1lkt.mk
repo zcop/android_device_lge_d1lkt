@@ -21,9 +21,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 PRODUCT_NAME := full_d1lkt
 PRODUCT_DEVICE := d1lkt
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := AOSP on d1lkt
+PRODUCT_MODEL := CM on d1lkt
 PRODUCT_MANUFACTURER := LGE
 
 # Inherit from hardware-specific part of the product configuration
+$(call inherit-product, hardware/qcom/msm8960/msm8960.mk)
 $(call inherit-product, device/lge/d1lkt/device.mk)
 $(call inherit-product-if-exists, vendor/lge/d1lkt/d1lkt.mk)

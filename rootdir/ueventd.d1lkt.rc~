@@ -29,7 +29,7 @@
 /dev/smd2                 0660   bluetooth  bluetooth
 /dev/genlock              0666   system     system
 /dev/kgsl                 0666   system     system
-/dev/kgsl-3d0             0666   system     system
+/dev/kgsl-3d0             0666   root       root
 /dev/kgsl-2d0             0666   root       root
 /dev/kgsl-2d1             0666   root       root
 /dev/ion                  0664   system     system
@@ -92,8 +92,12 @@
 /dev/msm_amrnb_in         0640   system     audio
 /dev/ttyHSL1              0660   system     system
 /dev/mdm                  0660   system     system
-/sys/devices/virtual/smdpkt/smdcntl*       open_timeout   0664 radio radio
+/sys/devices/virtual/smdpkt/smdcntl*        open_timeout   0664 radio radio
 /dev/sdio_tty_ciq_00      0660   system     system
 /dev/tty_sdio_00          0660   system     system
 /dev/ttyGS0               0660   system     system
-/dev/i2c-5                0660   media       media
+/dev/i2c-5                0660   media      media
+/dev/oncrpc/*             0660   root       qcom_oncrpc
+/dev/smd11      	  0660   radio      radio
+/dev/broadcast0           0660   media      media
+/dev/ioctl_hdmi	      	  0666   root       root
