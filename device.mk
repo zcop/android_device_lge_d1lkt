@@ -41,8 +41,8 @@ PRODUCT_PACKAGES += \
 
 LOCAL_KERNEL := device/lge/d1lkt/kernel
 
-PRODUCT_COPY_FILES := \
-	$(LOCAL_KERNEL):kernel
+#PRODUCT_COPY_FILES := \
+#	$(LOCAL_KERNEL):kernel
 
 PRODUCT_COPY_FILES += \
 	device/lge/d1lkt/rootdir/init.d1lkt.rc:root/init.d1lkt.rc \

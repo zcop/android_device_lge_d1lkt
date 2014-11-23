@@ -14,6 +14,6 @@
 # limitations under the License.
 #
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-TARGET_PREBUILT_KERNEL := device/lge/d1lkt/kernel
-endif
+#ifeq ($(TARGET_PREBUILT_KERNEL),)
+#TARGET_PREBUILT_KERNEL := device/lge/d1lkt/kernel
+#endif
